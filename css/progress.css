@@ -1,0 +1,83 @@
+/* Progress bar */
+$background: #2c303a;
+
+.container {
+margin: 100px auto;
+width: 500px;
+text-align: center;
+}
+
+.progress {
+padding: 6px;
+background: rgba(0, 0, 0, 0.25);
+border-radius: 6px;
+box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar {
+height: 18px;
+background-color: #ee303c;
+border-radius: 4px;
+transition: 0.4s linear;
+transition-property: width, background-color;
+}
+
+.progress-striped .progress-bar {
+background-color: #FCBC51;
+width: 2%;
+background-image: linear-gradient(
+45deg, rgb(252,163,17) 25%,
+transparent 25%, transparent 50%,
+rgb(252,163,17) 50%, rgb(252,163,17) 75%,
+transparent 75%, transparent);
+animation: progressAnimationStrike 6s;
+}
+
+@keyframes progressAnimationStrike {
+from { width: 0 }
+to   { width: 2% }
+}
+
+.progress2 {
+padding: 6px;
+border-radius: 30px;
+background: rgba(0, 0, 0, 0.25);
+box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar2 {
+height: 18px;
+border-radius: 30px;
+background-image:
+linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+transition: 0.4s linear;
+transition-property: width, background-color;
+}
+
+.progress-moved .progress-bar2 {
+width: 2%;
+background-color: #e42421;
+animation: progressAnimation 10s;
+}
+
+@keyframes progressAnimation {
+0%   { width: 0%; background-color: #e42421;}
+100% { width: 2%; background-color: #e42421; }
+}
+
+$green: #4cd964;
+$turquoise: #5ac8fa;
+$blue: #007aff;
+$light-blue: #7DC8E8;
+$purple: #5856d6;
+$red: #ff2d55;
+/* color-cheatcodes
+0 = #e42421 | 10 = #e95620 |20 = #ee8819 |30 = #f2c20a | 40 = #d3d808 | 50 = #89bb1c | 60 = #568d4a| 75 = #477269 | 85 = #3b4994 | 95 = #584692
+5 = #e63d20 | 15 = #ec6f1d |25 = #f0a611 |35 = #f2de01 | 45 = #adc912 | 55 = #89bb1c | 65 = #477269| 80 = #37558b | 90 = #494693 | 100 = #644593
+*/
+
+/* LOGO SAMURAI */
+.logo{
+width:130px;
+}
+
