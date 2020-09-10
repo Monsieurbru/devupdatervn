@@ -24,7 +24,7 @@ transition-property: width, background-color;
 
 .progress-striped .progress-bar {
 background-color: #FCBC51;
-width: 2%;
+width: 3%;
 background-image: linear-gradient(
 45deg, rgb(252,163,17) 25%,
 transparent 25%, transparent 50%,
@@ -35,7 +35,7 @@ animation: progressAnimationStrike 6s;
 
 @keyframes progressAnimationStrike {
 from { width: 0 }
-to   { width: 2% }
+to   { width: 3% }
 }
 
 .progress2 {
@@ -55,14 +55,14 @@ transition-property: width, background-color;
 }
 
 .progress-moved .progress-bar2 {
-width: 2%;
+width: 3%;
 background-color: #e42421;
 animation: progressAnimation 10s;
 }
 
 @keyframes progressAnimation {
 0%   { width: 0%; background-color: #e42421;}
-100% { width: 2%; background-color: #e42421; }
+100% { width: 3%; background-color: #e42421; }
 }
 
 $green: #4cd964;
